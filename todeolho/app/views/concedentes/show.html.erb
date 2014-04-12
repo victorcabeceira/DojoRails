@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @concedente.nome %>
+</p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @concedente.codigo %>
+</p>
+
+<p>
+  <strong>References:</strong>
+  <%= @concedente.references %>
+</p>
+
+<%= link_to 'Edit', edit_concedente_path(@concedente) %> |
+<%= link_to 'Back', concedentes_path %>

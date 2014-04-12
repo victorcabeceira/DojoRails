@@ -1,4 +1,8 @@
 Todeolho::Application.routes.draw do
+  resources :concedentes
+
+  resources :locals
+
   resources :convenios
 
   # The priority is based upon order of creation: first created -> highest priority.

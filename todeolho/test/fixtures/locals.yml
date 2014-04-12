@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uf: MyString
+  municipio: MyString
+  cep: MyString
+  references: 
+
+two:
+  uf: MyString
+  municipio: MyString
+  cep: MyString
+  references: 

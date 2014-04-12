@@ -1,0 +1,31 @@
+<h1>Listing concedentes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Codigo</th>
+      <th>References</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @concedentes.each do |concedente| %>
+      <tr>
+        <td><%= concedente.nome %></td>
+        <td><%= concedente.codigo %></td>
+        <td><%= concedente.references %></td>
+        <td><%= link_to 'Show', concedente %></td>
+        <td><%= link_to 'Edit', edit_concedente_path(concedente) %></td>
+        <td><%= link_to 'Destroy', concedente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Concedente', new_concedente_path %>
