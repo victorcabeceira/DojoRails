@@ -1,4 +1,6 @@
 Todeolho::Application.routes.draw do
+  resources :convenentes
+
   resources :concedentes
 
   resources :locals

@@ -1,0 +1,31 @@
+<h1>Listing convenentes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Codigo</th>
+      <th>References</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @convenentes.each do |convenente| %>
+      <tr>
+        <td><%= convenente.nome %></td>
+        <td><%= convenente.codigo %></td>
+        <td><%= convenente.references %></td>
+        <td><%= link_to 'Show', convenente %></td>
+        <td><%= link_to 'Edit', edit_convenente_path(convenente) %></td>
+        <td><%= link_to 'Destroy', convenente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Convenente', new_convenente_path %>
