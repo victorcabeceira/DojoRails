@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: 
+  nome: MyString
+  situacao: 
+  valor: 
+  dataPublicacao: 2014-04-12
+  dataInicio: 2014-04-12
+  dataFim: 2014-04-12
+
+two:
+  codigo: 
+  nome: MyString
+  situacao: 
+  valor: 
+  dataPublicacao: 2014-04-12
+  dataInicio: 2014-04-12
+  dataFim: 2014-04-12

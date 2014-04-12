@@ -1,0 +1,39 @@
+<h1>Listing convenios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Nome</th>
+      <th>Situacao</th>
+      <th>Valor</th>
+      <th>Datapublicacao</th>
+      <th>Datainicio</th>
+      <th>Datafim</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @convenios.each do |convenio| %>
+      <tr>
+        <td><%= convenio.codigo %></td>
+        <td><%= convenio.nome %></td>
+        <td><%= convenio.situacao %></td>
+        <td><%= convenio.valor %></td>
+        <td><%= convenio.dataPublicacao %></td>
+        <td><%= convenio.dataInicio %></td>
+        <td><%= convenio.dataFim %></td>
+        <td><%= link_to 'Show', convenio %></td>
+        <td><%= link_to 'Edit', edit_convenio_path(convenio) %></td>
+        <td><%= link_to 'Destroy', convenio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Convenio', new_convenio_path %>

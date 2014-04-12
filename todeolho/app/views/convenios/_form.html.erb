@@ -1,0 +1,45 @@
+<%= form_for(@convenio) do |f| %>
+  <% if @convenio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@convenio.errors.count, "error") %> prohibited this convenio from being saved:</h2>
+
+      <ul>
+      <% @convenio.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codigo %><br>
+    <%= f.text_field :codigo %>
+  </div>
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :situacao %><br>
+    <%= f.text_field :situacao %>
+  </div>
+  <div class="field">
+    <%= f.label :valor %><br>
+    <%= f.text_field :valor %>
+  </div>
+  <div class="field">
+    <%= f.label :dataPublicacao %><br>
+    <%= f.date_select :dataPublicacao %>
+  </div>
+  <div class="field">
+    <%= f.label :dataInicio %><br>
+    <%= f.date_select :dataInicio %>
+  </div>
+  <div class="field">
+    <%= f.label :dataFim %><br>
+    <%= f.date_select :dataFim %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

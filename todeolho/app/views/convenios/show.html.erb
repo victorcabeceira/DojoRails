@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @convenio.codigo %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @convenio.nome %>
+</p>
+
+<p>
+  <strong>Situacao:</strong>
+  <%= @convenio.situacao %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @convenio.valor %>
+</p>
+
+<p>
+  <strong>Datapublicacao:</strong>
+  <%= @convenio.dataPublicacao %>
+</p>
+
+<p>
+  <strong>Datainicio:</strong>
+  <%= @convenio.dataInicio %>
+</p>
+
+<p>
+  <strong>Datafim:</strong>
+  <%= @convenio.dataFim %>
+</p>
+
+<%= link_to 'Edit', edit_convenio_path(@convenio) %> |
+<%= link_to 'Back', convenios_path %>
